@@ -33,6 +33,9 @@ $ sudo vim settings.py
 $ sudo vim settings.py
 
 # Change ALLOWED_HOSTS = ['127.0.0.1']
+# to run cloud server :
+ Change ALLOWED_HOSTS = ['public IP','your domain']
+
 
 $ python manage.py makemigrations
 ```
@@ -52,10 +55,13 @@ That was pretty simple, right? Now let's make the App live. We just need to star
 
 ```bash
 
-$ python manage.py runserver
+$ python manage.py runserver # while deploying on local host
+$ python manage.py runserver 0.0.0.0:<port number> # while deploying on cloud server
 ```
 
-Once the server is hosted, head over to http://127.0.0.1:8000/todos for the App.
+Once the server is hosted, you can access the App by the following urls:
+http://127.0.0.1:8000/todos  ##on localhost
+http://<your public ip > or domain # on cloud server 
 
 Cheers and Happy Coding :)
 # django-todo-updated
