@@ -5,20 +5,20 @@ A simple todo app built with django
 ## Usage Instructions
 To get this repository, Clone this repository by run the following command inside your git enabled terminal
 ```bash
-$ https://github.com/sumankarki9/django-todo-app.git
+$ git clone https://github.com/sumankarki9/django-todo-app.git
 ```
 
 Once you cloned repo, go to the cloned repo directory and run the following command
 
 ```bash
 
-$ cd django-todo # Moving into the project folder
+$ cd django-todo-app # Moving into the project folder
 
 $ virtualenv -p python3 env # Creating virtual environment
 
 $ source env/bin/activate # To activate virtual-environment ; Type deactivate to deactivate the virtual environment
 
-$ Install Django
+$ pip install django  #to install django 
 
 # Possible Errors May Come:
 # Time Zone Error Then 
